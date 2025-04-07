@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots and Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dots and Boxes</h1>
+        <div class="game-info">
+            <div class="player player1">
+                <span class="player-name">Player 1</span>
+                <span class="player-score" id="player1Score">0</span>
+            </div>
+            <div class="turn-indicator" id="turnIndicator">Player 1's Turn</div>
+            <div class="player player2">
+                <span class="player-name">Player 2</span>
+                <span class="player-score" id="player2Score">0</span>
+            </div>
+        </div>
+        <canvas id="gameBoard"></canvas>
+        <div class="controls">
+            <button id="restartButton">New Game</button>
+            <div class="size-selector">
+                <label for="boardSize">Board Size:</label>
+                <select id="boardSize">
+                    <option value="3">3x3</option>
+                    <option value="4" selected>4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="winning-banner" id="winningBanner">
+        <h2>🎉 Game Over! Time to Start Fresh! 🎉</h2>
+        <p id="winnerMessage"></p>
+        <button id="playAgainButton">Let's Do This Again! *fist bump* 👊</button>
+    </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html> 
